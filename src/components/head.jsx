@@ -8,22 +8,55 @@ function HeadDiv(props) {
     console.log(text.head);
   } */
   return (
-    <header className="bg-lightHead dark:bg-darkRed h-40">
+    <header
+      className="
+        bg-lightHead dark:bg-darkRed h-80
+          grid  grid-rows-6 grid-flow-col md:grid-cols-3  "
+    >
       <div
         className="
-			  bg-darkBlack md:bg-lightHead md:dark:bg-darkRed h-12 w-full px-3 text-white 
-					flex justify-between items-center "
+          bg-darkBlack
+          col-start-1 col-span-3 row-start-1 row-span-2 "
+      ></div>
+
+      <div
+        className="
+          text-white text-center
+          col-start-1 row-start-1"
       >
-        <div className="bg-purple-500 w-1/6 text-left">button</div>
+        dark mode
+      </div>
+      <div
+        className="
+          bg-purple-800 text-left 
+          col-start-1 row-start-2 
+      "
+      >
+        button
+      </div>
+      <div
+        className="
+            flex justify-center items-center 
+            col-start-2 row-start-1 row-span-4"
+      >
         <div
           className="
-						w-20 h-20 rounded-full bg-white
-						transform translate-y-6
-			"
+						w-44 h-44  rounded-full bg-white  
+            col-start-2 row-start-1"
         ></div>
+      </div>
+
+      <div
+        className="
+            col-start-3 row-start-1 row-span-2 bg-pink-400"
+      >
         <LanguageSelect></LanguageSelect>
       </div>
-      <div className="pt-12 text-center">
+      <div
+        className="
+          text-center bg-pink-800
+          col-start-1 col-span-3 row-start-5  row-span-2 "
+      >
         <div>{text.head && text.head[1]}</div>
         <div>{text.head && text.head[2]}</div>
       </div>
