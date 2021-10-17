@@ -2,12 +2,12 @@ const oneReference = (props) => {
   console.log(props.data.name);
   return (
     <div className="mb-6">
-      <div className="flex justify-center text-lg">
+      <header className="flex justify-center text-lg">
         <span className="mr-2 ">{props.data.name}</span>
         <span>{props.data.version}</span>
-      </div>
+      </header>
 
-      <div className="flex">
+      <section className="flex">
         <div className="h-48 w-48 bg-white text-red-500">kép</div>
         <div className="flex flex-wrap w-1/2">
           {props.data.icons.map((data, iterator) => (
@@ -16,11 +16,11 @@ const oneReference = (props) => {
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
       <div className="mt-4"> {props.data.description}</div>
 
-      <div className="mt-3">
+      <article className="mt-3">
         <div>{props.data.technologies.title}</div>
         {props.data.technologies.technologieList.map((data, iterator) => (
           <div className="flex" key={iterator}>
@@ -34,7 +34,7 @@ const oneReference = (props) => {
             </div>
           </div>
         ))}
-      </div>
+      </article>
     </div>
   );
 };

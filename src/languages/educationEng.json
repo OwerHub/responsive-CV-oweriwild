@@ -1,6 +1,16 @@
-["education",
-	[
-		["Front-end Developer", "CodeCool", "Budapest", "2020-2021"],
-		["Full-stack / API developer", "CodeCool", "Budapest", "2021"]
+{
+	"title": "education",
+	"schools": [{
+			"subject": "Front-end developer",
+			"institution": "CodeCool",
+			"city": "Budapest",
+			"year": "2020-2021"
+		},
+		{
+			"subject": "Full-stack / API developer",
+			"institution": "CodeCool",
+			"city": "Budapest",
+			"year": "2021"
+		}
 	]
-]
+}

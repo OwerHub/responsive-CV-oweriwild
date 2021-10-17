@@ -7,6 +7,8 @@ import headHu from "../languages/headHu.json";
 import headEng from "../languages/headEng.json";
 import referenceHu from "../languages/referenceHu.json";
 import referenceEng from "../languages/referenceEng.json";
+import softwareSkillsHu from "../languages/softwareSkillsHu.json";
+import softwareSkillsEng from "../languages/softwareSkillsEng.json";
 
 const LanguageSelect = () => {
   const [isEng, setEng] = useState(false);
@@ -18,12 +20,14 @@ const LanguageSelect = () => {
         head: headEng,
         education: educationEng,
         references: referenceEng,
+        softwareSkills: softwareSkillsEng,
       });
     } else {
       setText({
         head: headHu,
         education: educationHu,
         references: referenceHu,
+        softwareSkills: softwareSkillsHu,
       });
     }
   }, [isEng]);

@@ -1,11 +1,12 @@
 import Education from "./education";
 import References from "./references";
-
+import SoftwareSkills from "./softwareSkills";
 function Body(props) {
   return (
     <div>
-      <Education text={props.text}></Education>
-      <References text={props.text}></References>
+      <Education></Education>
+      <References></References>
+      <SoftwareSkills></SoftwareSkills>
     </div>
   );
 }

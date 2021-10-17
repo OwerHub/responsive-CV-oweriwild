@@ -28,6 +28,9 @@
 				"technologieList": [{
 					"title": "Frontend",
 					"techs": ["react", "tailwind", "sass", "kutyafüle"]
+				}, {
+					"title": "Backend",
+					"techs": ["bla", "bla", "bla", "bla"]
 				}]
 
 			}

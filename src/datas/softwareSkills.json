@@ -1,0 +1,13 @@
+{
+	"css": 90,
+	"sass": 80,
+	"js": 75,
+	"bootstrap": 45,
+	"tailwind": 80,
+	"react": 80,
+	"node": 85,
+	"mongoDb": 85,
+	"docker": 35,
+	"photoshop": 95,
+	"illustrator": 35
+}

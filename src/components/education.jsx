@@ -11,11 +11,11 @@ function Education(props) {
   return (
     <div className="bg-darkBlack text-white px-4 py-4">
       <div className="uppercase text-center text-xl py-4 ">
-        {text.education && text.education[0]}
+        {text.education && text.education.title}
       </div>
       <div>
         {text.education &&
-          text.education[1].map((data, iterator) => (
+          text.education.schools.map((data, iterator) => (
             <Schools data={data} key={iterator}></Schools>
           ))}
       </div>
