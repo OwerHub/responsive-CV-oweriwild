@@ -8,10 +8,10 @@ function HeadDiv(props) {
     console.log(text.head);
   } */
   return (
-    <header className="bg-darkRed h-40">
+    <header className="bg-lightHead dark:bg-darkRed h-40">
       <div
         className="
-					bg-darkBlack h-12 w-full px-3 text-white 
+			  bg-darkBlack md:bg-lightHead md:dark:bg-darkRed h-12 w-full px-3 text-white 
 					flex justify-between items-center "
       >
         <div className="bg-purple-500 w-1/6 text-left">button</div>

@@ -11,7 +11,7 @@ function App() {
 
   return (
     <TextProvider>
-      <div className="App">
+      <div className="App ">
         <HeadDiv></HeadDiv>
         <div
           className="
