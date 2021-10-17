@@ -9,6 +9,8 @@ import referenceHu from "../languages/referenceHu.json";
 import referenceEng from "../languages/referenceEng.json";
 import softwareSkillsHu from "../languages/softwareSkillsHu.json";
 import softwareSkillsEng from "../languages/softwareSkillsEng.json";
+import footerEng from "../languages/footerEng.json";
+import footerHu from "../languages/footerHu.json";
 
 const LanguageSelect = () => {
   const [isEng, setEng] = useState(false);
@@ -21,6 +23,7 @@ const LanguageSelect = () => {
         education: educationEng,
         references: referenceEng,
         softwareSkills: softwareSkillsEng,
+        footer: footerEng,
       });
     } else {
       setText({
@@ -28,6 +31,7 @@ const LanguageSelect = () => {
         education: educationHu,
         references: referenceHu,
         softwareSkills: softwareSkillsHu,
+        footer: footerHu,
       });
     }
   }, [isEng]);

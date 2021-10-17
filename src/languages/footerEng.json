@@ -1,0 +1,18 @@
+{
+	"hobbies": {
+		"title": "Hobbies",
+		"datas": ["Music", "Photos", "Reading"]
+	},
+	"skills": {
+		"title": "Personal Skill",
+		"datas": ["Kreatív", "Tanulékony", "stb", "nagyonSTB"]
+	},
+	"contacts": {
+		"title": "Contacts",
+
+		"phone": "+36/30/665-84-70",
+		"mail": "attila.viszlo@gmail.com",
+		"github": "belebleblae"
+
+	}
+}
