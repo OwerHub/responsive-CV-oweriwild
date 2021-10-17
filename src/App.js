@@ -13,8 +13,16 @@ function App() {
     <TextProvider>
       <div className="App">
         <HeadDiv></HeadDiv>
-        <Body></Body>
-        <Footer> </Footer>
+        <div
+          className="
+        grid grid-cols-1 
+        md:grid-cols-4  lg:grid-cols-5 xl:grid-cols-6
+        
+        "
+        >
+          <Body></Body>
+          <Footer> </Footer>
+        </div>
       </div>
     </TextProvider>
   );
