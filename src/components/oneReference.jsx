@@ -1,5 +1,51 @@
+import cssPic from "../img/icons/css.png";
+import sassPic from "../img/icons/sass.png";
+import jsPic from "../img/icons/javascript.png";
+import reactPic from "../img/icons/react.png";
+import bootstrapPic from "../img/icons/bootstrap.png";
+import tailwindPic from "../img/icons/tailwind.png";
+
+import nodeJsPic from "../img/icons/nodeJs.png";
+import mongoDbPic from "../img/icons/mongoDB.png";
+import dockerPic from "../img/icons/docker.png";
+
 const oneReference = (props) => {
-  console.log(props.data.name);
+  const checkElement = (element) => {
+    console.log(props.data.icons.indexOf("Mongo"));
+  };
+
+  const iconArray = [
+    cssPic,
+    sassPic,
+    jsPic,
+    reactPic,
+    bootstrapPic,
+    tailwindPic,
+    nodeJsPic,
+    mongoDbPic,
+    dockerPic,
+  ];
+
+  const iconNameArray = [
+    "css",
+    "sass",
+    "js",
+    "react",
+    "bootstap",
+    "tailwind",
+    "node",
+    "mongo",
+    "docker",
+  ];
+
+  const checkIcon = (inputArray) => {
+    for (const techniq of inputArray) {
+      console.log(iconNameArray.indexOf(techniq));
+    }
+  };
+
+  // checkIcon(props.data.icons);
+
   return (
     <div className="mb-6">
       <header className="flex justify-center text-lg">
@@ -10,9 +56,9 @@ const oneReference = (props) => {
       <section className="flex">
         <div className="h-48 w-48 bg-white text-red-500">kép</div>
         <div className="flex flex-wrap w-1/2">
-          {props.data.icons.map((data, iterator) => (
+          {iconArray.map((data, iterator) => (
             <div className="mx-4 my-4" key={iterator}>
-              {data}
+              <img src={data} alt={`logo${iterator}`} className="w-10 h-10" />
             </div>
           ))}
         </div>

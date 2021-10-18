@@ -8,10 +8,6 @@ import Contacts from "./contacts";
 const Footer = () => {
   const [text, setText] = useContext(TextContext);
 
-  if (text.footer) {
-    console.log(text.footer.hobbies);
-  }
-
   return (
     <div
       className="

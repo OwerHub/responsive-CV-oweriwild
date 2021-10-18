@@ -1,7 +1,4 @@
 const Hobbies = (props) => {
-  if (props.data) {
-    console.log(props.data);
-  }
   return (
     <div className="dark:bg-darkGray  bg-lightBg md:bg-transparent">
       <header>{props.data.title}</header>
