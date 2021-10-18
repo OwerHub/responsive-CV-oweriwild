@@ -1,6 +1,6 @@
 const PersonalSkills = (props) => {
   return (
-    <div className="bg-darkBlack">
+    <div className="bg-lightCard dark:bg-darkBlack  md:bg-transparent">
       <header>{props.data.title}</header>
       <section>
         {props.data.datas.map((data, iterator) => (

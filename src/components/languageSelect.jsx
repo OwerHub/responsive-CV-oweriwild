@@ -41,7 +41,7 @@ const LanguageSelect = () => {
   };
 
   return (
-    <div className=" text-right" onClick={() => clickFunct()}>
+    <div className=" text-center text-white" onClick={() => clickFunct()}>
       eng / hu
     </div>
   );

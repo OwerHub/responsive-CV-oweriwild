@@ -1,6 +1,6 @@
 const PersonalSkills = (props) => {
   return (
-    <div className="bg-darkGray">
+    <div className="bg-lightBg dark:bg-darkGray  md:bg-transparent">
       <header>{props.data.title}</header>
       <section>
         <div>{props.data.phone}</div>

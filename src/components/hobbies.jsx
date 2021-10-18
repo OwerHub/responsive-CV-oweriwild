@@ -3,7 +3,7 @@ const Hobbies = (props) => {
     console.log(props.data);
   }
   return (
-    <div className="bg-darkGray">
+    <div className="dark:bg-darkGray  bg-lightBg md:bg-transparent">
       <header>{props.data.title}</header>
       <section>
         {props.data.datas.map((data, iterator) => (

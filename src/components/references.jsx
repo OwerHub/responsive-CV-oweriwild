@@ -5,7 +5,13 @@ import OneReference from "./oneReference";
 function Reference(props) {
   const [text, settext] = useContext(TextContext);
   return (
-    <div className="bg-darkGray text-white px-8 pb-6">
+    <div
+      className="
+
+            dark:bg-darkGray bg-lightBg md:bg-lightCard
+            px-8 pb-6
+            md:mt-4 md:mr-4 md:rounded-sm "
+    >
       <header className="text-center uppercase text-xl py-4">
         {text.references && text.references.title}
       </header>

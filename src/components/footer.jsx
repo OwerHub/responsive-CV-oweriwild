@@ -14,8 +14,11 @@ const Footer = () => {
 
   return (
     <div
-      className="bg-darkBlack text-white
-		md:col-start-1 md:row-start-1
+      className="
+				text-black dark:text-white md:text-white
+				md:bg-lightSide md:dark:bg-darkBlack 
+					md:col-start-1 md:row-start-1 md:pt-32 
+					md:border-r-2 md:dark:border-darkYellow md:border-darkBlack
 		"
     >
       {text.footer && <Hobbies data={text.footer.hobbies}></Hobbies>}

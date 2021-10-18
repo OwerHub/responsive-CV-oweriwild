@@ -15,7 +15,13 @@ const SoftwareSkills = () => {
   };
 
   return (
-    <div className="bg-darkBlack text-white">
+    <div
+      className="
+        
+        bg-lightCard dark:bg-darkBlack 
+        md:dark:bg-darkGray
+          md:my-4 md:ml-4 md:rounded-sm "
+    >
       <header className="text-center py-5 uppercase text-xl">
         {text.softwareSkills && text.softwareSkills.title}
       </header>

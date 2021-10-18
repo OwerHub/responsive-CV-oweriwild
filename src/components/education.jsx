@@ -9,7 +9,13 @@ function Education(props) {
   } */
   //const theme = useContext(ThemeContext);
   return (
-    <div className="bg-darkBlack text-white px-4 py-4">
+    <div
+      className="
+          bg-lightCard dark:bg-darkBlack 
+          md:dark:bg-darkGray
+            md:mt-4 md:ml-4 md:rounded-sm 
+           px-4 py-4"
+    >
       <div className="uppercase text-center text-xl py-4 ">
         {text.education && text.education.title}
       </div>
