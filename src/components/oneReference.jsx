@@ -38,13 +38,15 @@ const oneReference = (props) => {
     "docker",
   ];
 
-  const checkIcon = (inputArray) => {
-    for (const techniq of inputArray) {
-      console.log(iconNameArray.indexOf(techniq));
-    }
+  const existTechniqIcons = (inputArray) => {
+    let iconList = [];
+    iconNameArray.map((icon, iterator) => {
+      if (inputArray.indexOf(icon) !== -1) {
+        iconList.push(iconArray[iterator]);
+      }
+    });
+    return iconList;
   };
-
-  // checkIcon(props.data.icons);
 
   return (
     <div className="mb-6">
@@ -56,7 +58,7 @@ const oneReference = (props) => {
       <section className="flex">
         <div className="h-48 w-48 bg-white text-red-500">kép</div>
         <div className="flex flex-wrap w-1/2">
-          {iconArray.map((data, iterator) => (
+          {existTechniqIcons(props.data.icons).map((data, iterator) => (
             <div className="mx-4 my-4" key={iterator}>
               <img src={data} alt={`logo${iterator}`} className="w-10 h-10" />
             </div>
