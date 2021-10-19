@@ -28,7 +28,7 @@ const SoftwareSkills = () => {
 
       <section className="flex flex-wrap justify-center">
         {objectToArray(softwareSkillsData).map((data, iterator) => (
-          <OneSkill key={`os${iterator}`} data={data}></OneSkill>
+          <OneSkill key={`os${iterator}`} count={iterator} data={data}></OneSkill>
         ))}
       </section>
     </div>
