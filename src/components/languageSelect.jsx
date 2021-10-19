@@ -12,6 +12,9 @@ import softwareSkillsEng from "../languages/softwareSkillsEng.json";
 import footerEng from "../languages/footerEng.json";
 import footerHu from "../languages/footerHu.json";
 
+import flagHu from "../img/flags/hun.jpg";
+import flagEng from "../img/flags/eng.jpg";
+
 const LanguageSelect = () => {
   const [isEng, setEng] = useState(false);
   const [text, setText] = useContext(TextContext);
@@ -41,8 +44,26 @@ const LanguageSelect = () => {
   };
 
   return (
-    <div className=" text-center text-white" onClick={() => clickFunct()}>
-      eng / hu
+    <div
+      className={` 
+ 
+             flex justify-center items-center 
+            flex-col ${
+              isEng ? "md:flex-row flex-col" : "md:flex-row-reverse flex-col-reverse"
+            }`}
+    >
+      <img
+        src={flagEng}
+        alt="flagEng"
+        className="h-5 m-1 cursor-pointer"
+        onClick={() => setEng(true)}
+      />
+      <img
+        src={flagHu}
+        alt="flagHu"
+        className="h-5 m-1 cursor-pointer"
+        onClick={() => setEng(false)}
+      />
     </div>
   );
 };

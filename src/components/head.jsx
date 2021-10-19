@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
+import Switch from "./switch";
+
 import LanguageSelect from "./languageSelect";
 import { TextContext } from "../context/TextContext";
 
@@ -10,7 +12,7 @@ function HeadDiv(props) {
   return (
     <header
       className="
-        bg-lightHead dark:bg-darkRed h-80 md:h-40
+        bg-lightHead dark:bg-darkRed h-80 md:h-40 md:pr-2
           grid  grid-rows-6 grid-flow-col md:grid-cols-8 md:grid-rows-4
           lg:grid-cols-10 xl:grid-cols-12"
     >
@@ -23,13 +25,15 @@ function HeadDiv(props) {
 
       <div
         className="
-          text-left  text-white cursor-pointer
-          col-start-1 row-start-1 row-span-1 md:row-span-2
+          text-left  cursor-pointer 
+          flex justify-center items-center
+          col-start-1 row-start-1 row-span-2 md:row-span-2 
           md:col-start-8 lg:col-start-10  xl:col-start-12
+          
       "
         onClick={props.switch}
       >
-        dark
+        <Switch dark={props.dark} text={text.head && text.head[3]}></Switch>
       </div>
       <div
         className="
@@ -46,7 +50,7 @@ function HeadDiv(props) {
 
       <div
         className="
-          
+            flex justify-center items-center
             col-start-3 row-start-1 row-span-2
             md:row-start-3 md:row-span-2 
             md:col-start-8 lg:col-start-10  xl:col-start-12"

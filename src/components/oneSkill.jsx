@@ -6,14 +6,15 @@ const OneSkill = (props) => {
   const [icon, name, color2, color1] = returnIcon(props.data[0]);
 
   return (
-    <div>
+    <div className="transform scale-75 md:scale-100 ">
       <div
-        className="
+        className=" ;
       bg-white bg-opacity-90 text-black w-28 h-28 rounded-full m-4 
 			flex justify-center items-center flex-col relative
+      
       "
       >
-        <div className="absolute ">
+        <div className="absolute">
           <Pie
             count={props.count}
             percentage={props.data[1]}
