@@ -20,7 +20,7 @@ const Circle = ({ colour, pct }) => {
       strokeWidth={"11px"}
       strokeDasharray={circ}
       strokeDashoffset={pct ? strokePct : 0}
-      strokeLinecap="round"
+      strokeLinecap="butt"
     ></circle>
   );
 };
@@ -39,15 +39,29 @@ const Circle = ({ colour, pct }) => {
   );
 }; */
 
-const Pie = ({ percentage, colour }) => {
+const Pie = ({ percentage, color1, color2 }) => {
   const pct = cleanPercentage(percentage);
   return (
     <svg width={200} height={200}>
       <g transform={`rotate(-90 ${"100 100"})`}>
         <Circle colour="white" />
-        <Circle colour={colour} pct={pct} />
+        <Circle colour={"url(#GradientColor)"} pct={pct} />
       </g>
       {/* 	<Text percentage={pct} /> */}
+      <defs>
+        <linearGradient
+          id="GradientColor"
+          x1="0"
+          x2="0"
+          y1="0"
+          y2="1"
+          gradientTransform="rotate(-10)"
+        >
+          <stop offset="0%" stopColor={color1} />
+
+          <stop offset="100%" stopColor={color2} />
+        </linearGradient>
+      </defs>
     </svg>
   );
 };

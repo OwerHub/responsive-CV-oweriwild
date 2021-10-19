@@ -13,7 +13,7 @@ function App() {
     <TextProvider>
       <div className={`App ${isDark && "dark"}`}>
         <HeadDiv switch={() => setDark(!isDark)} dark={isDark}></HeadDiv>
-        <selection
+        <section
           className="
         grid grid-cols-1
         md:grid-cols-4  lg:grid-cols-5 xl:grid-cols-6
@@ -22,7 +22,7 @@ function App() {
         >
           <Body></Body>
           <Footer> </Footer>
-        </selection>
+        </section>
       </div>
     </TextProvider>
   );

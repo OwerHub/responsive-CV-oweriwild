@@ -1,25 +1,32 @@
 import { useEffect } from "react";
-import "../styles/try.css";
 import Pie from "./pie";
+import { returnIcon } from "../service/iconsAndSkills";
+
 const OneSkill = (props) => {
-  // percen
+  const [icon, name, color2, color1] = returnIcon(props.data[0]);
 
   return (
     <div>
       <div
         className="
-      bg-white text-black w-28 h-28 rounded-full m-4 
+      bg-white bg-opacity-90 text-black w-28 h-28 rounded-full m-4 
 			flex justify-center items-center flex-col relative
       "
       >
         <div className="absolute ">
-          <Pie className="" percentage={props.data[1]} colour="blue" />
+          <Pie
+            count={props.count}
+            percentage={props.data[1]}
+            color1={color1}
+            color2={color2}
+          />
         </div>
-        <div className="absolute">százalék</div>
+        {/* <div className="absolute">százalék</div> */}
+        <img src={icon} alt={props.data[0]} width="50px" />
         {/*  <div>{props.data[1]}</div>
       <div>{props.data[0]}</div> */}
       </div>
-      <div className="text-center">{props.data[0]}</div>
+      <div className="text-center">{name}</div>
     </div>
   );
 };
