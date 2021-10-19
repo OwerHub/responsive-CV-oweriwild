@@ -5,7 +5,7 @@ function Switch(props) {
 				flex justify-center items-center flex-col 
 			"
     >
-      <div>{props.text}</div>
+      <div className="text-white md:text-black md:dark:text-white">{props.text}</div>
       <div
         className={`
 								bg-gray-300 h-4 w-7 rounded-full mt-2 
