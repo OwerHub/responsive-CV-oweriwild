@@ -39,18 +39,18 @@ const Circle = ({ colour, pct }) => {
   );
 }; */
 
-const Pie = ({ percentage, color1, color2 }) => {
+const Pie = ({ percentage, color1, color2, count }) => {
   const pct = cleanPercentage(percentage);
   return (
     <svg width={200} height={200}>
       <g transform={`rotate(-90 ${"100 100"})`}>
-        <Circle colour="white" />
-        <Circle colour={"url(#GradientColor)"} pct={pct} />
+        <Circle colour="rgba(255,255,255,0.1)" />
+        <Circle colour={`url(#GradientColor${count})`} pct={pct} />
       </g>
       {/* 	<Text percentage={pct} /> */}
       <defs>
         <linearGradient
-          id="GradientColor"
+          id={`GradientColor${count}`}
           x1="0"
           x2="0"
           y1="0"
@@ -59,7 +59,7 @@ const Pie = ({ percentage, color1, color2 }) => {
         >
           <stop offset="0%" stopColor={color1} />
 
-          <stop offset="100%" stopColor={color2} />
+          <stop offset="95%" stopColor={color2} />
         </linearGradient>
       </defs>
     </svg>

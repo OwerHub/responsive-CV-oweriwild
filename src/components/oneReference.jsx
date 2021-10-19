@@ -1,53 +1,6 @@
-import cssPic from "../img/icons/css.png";
-import sassPic from "../img/icons/sass.png";
-import jsPic from "../img/icons/javascript.png";
-import reactPic from "../img/icons/react.png";
-import bootstrapPic from "../img/icons/bootstrap.png";
-import tailwindPic from "../img/icons/tailwind.png";
-
-import nodeJsPic from "../img/icons/nodeJs.png";
-import mongoDbPic from "../img/icons/mongoDB.png";
-import dockerPic from "../img/icons/docker.png";
+import { existTechniqIcons } from "../service/iconsAndSkills";
 
 const oneReference = (props) => {
-  const checkElement = (element) => {
-    console.log(props.data.icons.indexOf("Mongo"));
-  };
-
-  const iconArray = [
-    cssPic,
-    sassPic,
-    jsPic,
-    reactPic,
-    bootstrapPic,
-    tailwindPic,
-    nodeJsPic,
-    mongoDbPic,
-    dockerPic,
-  ];
-
-  const iconNameArray = [
-    "css",
-    "sass",
-    "js",
-    "react",
-    "bootstap",
-    "tailwind",
-    "node",
-    "mongo",
-    "docker",
-  ];
-
-  const existTechniqIcons = (inputArray) => {
-    let iconList = [];
-    iconNameArray.map((icon, iterator) => {
-      if (inputArray.indexOf(icon) !== -1) {
-        iconList.push(iconArray[iterator]);
-      }
-    });
-    return iconList;
-  };
-
   return (
     <div className="mb-6">
       <header className="flex justify-center text-lg">
