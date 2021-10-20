@@ -3,52 +3,103 @@
 	"referenceList": [
 
 		{
-			"name": "Parallax Pizza",
+			"name": "Reszponzív CV",
 			"version": "0.8",
 			"pictureNumber": 0,
-			"icons": ["js", "react", "sass", "node", "mongo", "docker"],
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"icons": ["js", "tailwind", "react", "tailwind"],
+			"description": "Egy  leprogramozott CV, amibe azért került egy-két plusz dolog.. Angol/magyar nyelv  és a sötét/világos módok  váltásnak lehetősége, mobil és képernyőnézet közötti teljes átrendezés, és az adatok / kódrészek olyan struktúrja (nincs beégetett adat), ami rendkívül egyszerűvé teszi a későbbi fejlesztést, vagy ha adott rá a környezet, a backend-ből történő kiszolgálást.",
+			"features": {
+				"title": "Funckiók",
+				"datas": [
+					"Angol magyar nyelv váltásának lehetősége",
+					"sötét/világos módok",
+					"Reszponzivitás 300px- felfelé",
+					"képernyő és mobinézet közötti teljes átrendezés",
+					"Tailwind.CSS használata",
+					"fenntartható kód (adatok JSON-ből olvasva, nincs hard-kódolás)"
+				]
+			},
 			"technologies": {
 				"title": "Felhasznált technológiák",
 				"technologieList": [{
 					"title": "Frontend",
-					"techs": ["react", "tailwind", "sass", "kutyafüle"]
+					"techs": ["Javascript", "React", "Tailwind", "SVG"]
 				}]
-
-			}
+			},
+			"publics": [
+				["github", "OwerHub/responsive-CV-oweriwild"]
+			]
 		},
 		{
-			"name": "Parallax Pizza",
+			"name": "HoolieDayz",
 			"version": "0.8",
 			"pictureNumber": 0,
-			"icons": ["js", "react", "sass", "node", "mongo", "docker"],
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"icons": ["css", "sass", "js", "react", "node", "mongoDb", "docker"],
+			"description": "Egy régi szerelemprojekt, ami  a backend/API kurzus vizsgamunkájává nőtte ki magát. Jelen verziója a vizsgakövetelményeknek megfelelően íródott, így inkább a backendre fókuszál, és több felesleges, későbbiekben valószínűleg eltávolításra kerülő funkció is van benne. A program lényege, hogy google bejelentkezés után saját ünnepnapokat írhatunk bele, ezeket kategóriák alá soroljuk, online adatbázisba (mongoDB) mentjük, és kívánságra a google naptárunkba saját layer alá mentjük. A backend  minden végpontja tesztekkel van lefedve, és Swagger-ben dokumentált.   A github repo futtatásához környezeti változók szükségesek,  a docker a 3000-es porton azonnal fut",
+			"features": {
+				"title": "Funckiók",
+				"datas": [
+					"Google Login",
+					"Reszponzivitás 300px-től",
+					"Saját ünnepnapok írása, szerkesztése, törlése. A változások azonnal online adatbázisba kerülnek.",
+					"Ünnepnapok mentése Google Naptárba API-n keresztül",
+					"Ünnepek csoportba rendezése. A csoportok adatbázisból jönnek így a későbbi verziókban tetszőlegesen módosíthatók",
+					"Megjelenítés lehet dátum, hátralévő idő, és betűrend alapján, a csoportok megjelenítése egyenként kapcsolható",
+					"teljes végpont tesztlefedettég, és Swagger dokumentáció",
+					"Fenntartható, bővíthető kód  és MVC pattern használata"
+				]
+			},
+
 			"technologies": {
 				"title": "Felhasznált technológiák",
 				"technologieList": [{
 					"title": "Frontend",
-					"techs": ["react", "tailwind", "sass", "kutyafüle"]
+					"techs": ["CSS", "SASS", "Javasript", "React", "Docker/Compose"]
 				}, {
 					"title": "Backend",
-					"techs": ["bla", "bla", "bla", "bla"]
+					"techs": ["NodeJs", "ExpressJS", "MongoDB", "Mongoose", "Swagger", "Jest/supertest/memoryServer", "Google API", "JWT", "Dotenv", "Docker/Compose"]
 				}]
 
-			}
+			},
+			"publics": [
+				["github", "OwerHub/HolyDay"],
+				["docker", "docker-bármi"]
+			]
 		},
 		{
 			"name": "Parallax Pizza",
 			"version": "0.8",
 			"pictureNumber": 0,
-			"icons": ["js", "react", "sass", "node", "mongo", "docker"],
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"icons": ["css", "sass", "js", "react", "node"],
+			"description": "Egy iskolai, főként frontend-re/látványra fókuszált versenyre alatt készült  full-stack project. A reszponzív felületen görgetésre feliratok úsznak oldalra, fadelnek szembe a felhasználóval  a fejléc reagál a görgetés pozíciójára az svg-alakzatok reagálnak az egér helyzetére. A frontenden foglalt asztalokat a backend json-ba menti és a foglalt asztalt kivonja a választható lehetőségek közül",
+			"features": {
+				"title": "Funckiók",
+				"datas": [
+					"Reszponzivitás 300px-től",
+					"Görgetésre parallax módon reagáló elemek, feliratok",
+					"Fejléc dinamikusan leköveti a görgetés pozícióját",
+					"Működő asztalfoglalási rendszer",
+					"Foglalt asztalt mentése json-be",
+					"foglalt asztalok deaktiválása",
+					"Egérmutatóra animált SVG ikonok"
+				]
+			},
 			"technologies": {
 				"title": "Felhasznált technológiák",
 				"technologieList": [{
-					"title": "Frontend",
-					"techs": ["react", "tailwind", "sass", "kutyafüle"]
-				}]
+						"title": "Frontend",
+						"techs": ["CSS", "SASS", "Javascript", "React", "Styled Components", "SVG"]
+					},
+					{
+						"title": "Backend",
+						"techs": ["NodeJs", "ExpressJs"]
+					}
+				]
 
-			}
+			},
+			"publics": [
+				["github", "PizzaParallax"]
+			]
 		}
 
 

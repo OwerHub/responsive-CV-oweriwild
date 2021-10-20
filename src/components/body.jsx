@@ -6,7 +6,7 @@ function Body(props) {
     <div
       className="
           md:col-start-2 md:col-span-3 lg:col-span-4 xl:col-span-5
-         "
+          font-poppins"
     >
       <Education></Education>
       <References></References>

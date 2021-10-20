@@ -22,7 +22,15 @@ function Reference(props) {
       <section>
         {text.references &&
           text.references.referenceList.map((data, iterator) => (
-            <OneReference key={`of${iterator}`} data={data}></OneReference>
+            <div
+              key={`of${iterator}`}
+              className={`${
+                text.references.referenceList.length !== iterator + 1 &&
+                "border-b border-darkYellow mb-4"
+              }  `}
+            >
+              <OneReference data={data}></OneReference>
+            </div>
           ))}
       </section>
     </div>

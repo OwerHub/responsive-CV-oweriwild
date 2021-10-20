@@ -8,6 +8,7 @@ module.exports = {
         archivoBlack: "Archivo Black",
         jura: "Jura",
         exo2: "Exo 2",
+        poppins: "Poppins",
       },
       colors: {
         darkRed: "#e73925",
