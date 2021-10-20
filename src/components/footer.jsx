@@ -15,11 +15,15 @@ const Footer = () => {
 				md:bg-lightSide md:dark:bg-darkBlack 
 					md:col-start-1 md:row-start-1 md:pt-32 
 					md:border-r-2 md:dark:border-darkYellow md:border-darkBlack
+          md:pl-4
 		"
     >
-      {text.footer && <Hobbies data={text.footer.hobbies}></Hobbies>}
-      {text.footer && <PersonalSkills data={text.footer.skills}></PersonalSkills>}
+      <div className=" bg-lightBg dark:bg-darkGray text-center py-4 cardHead md:hidden">
+        {text.footer && text.footer.others[0]}
+      </div>
       {text.footer && <Contacts data={text.footer.contacts}></Contacts>}
+      {text.footer && <PersonalSkills data={text.footer.skills}></PersonalSkills>}
+      {text.footer && <Hobbies data={text.footer.hobbies}></Hobbies>}
     </div>
   );
 };

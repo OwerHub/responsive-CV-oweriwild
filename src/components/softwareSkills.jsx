@@ -22,7 +22,7 @@ const SoftwareSkills = () => {
         md:dark:bg-darkGray
           md:my-4 md:ml-4 md:rounded-sm "
     >
-      <header className="text-center py-5 uppercase text-xl">
+      <header className="text-center py-8 cardHead">
         {text.softwareSkills && text.softwareSkills.title}
       </header>
 

@@ -59,15 +59,30 @@ function HeadDiv(props) {
       </div>
       <div
         className="
-          text-center  
+          text-center  font-we
           col-start-1 col-span-3 row-start-5  row-span-2
           md:col-start-3 md:row-start-1  md:row-span-4
           md:col-span-5 lg:col-span-7 xl:col-span-9
 
           "
       >
-        <div>{text.head && text.head[1]}</div>
-        <div>{text.head && text.head[2]}</div>
+        <div
+          className="
+          md:mt-10
+          font-archivoBlack text-6xl text-left  uppercase
+          text-center  md:text-left"
+        >
+          {text.head && text.head[1]}
+        </div>
+        <div
+          className="
+          mt-3
+          text-jura font-light uppercase text-2xl  tracking-widest
+         dark:text-white
+          text-center  md:text-left"
+        >
+          {text.head && text.head[2]}
+        </div>
       </div>
     </header>
   );

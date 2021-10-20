@@ -12,7 +12,10 @@ function Reference(props) {
             px-8 pb-6
             md:mt-4 md:mr-4 md:rounded-sm "
     >
-      <header className="text-center uppercase text-xl py-4">
+      <header
+        className="text-center  py-8   
+      cardHead "
+      >
         {text.references && text.references.title}
       </header>
 

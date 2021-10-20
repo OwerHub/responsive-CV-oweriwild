@@ -3,6 +3,12 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        inter: "Inter",
+        archivoBlack: "Archivo Black",
+        jura: "Jura",
+        exo2: "Exo 2",
+      },
       colors: {
         darkRed: "#e73925",
         darkYellow: "#f6d60e",

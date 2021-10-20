@@ -16,9 +16,10 @@ function Education(props) {
             md:mt-4 md:ml-4 md:rounded-sm 
            px-4 py-4"
     >
-      <div className="uppercase text-center text-xl py-4 ">
+      <div className="uppercase text-center  py-4 cardHead ">
         {text.education && text.education.title}
       </div>
+
       <div>
         {text.education &&
           text.education.schools.map((data, iterator) => (
