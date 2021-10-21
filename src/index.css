@@ -19,6 +19,8 @@
 
 
 .cardHead{
-  @apply  font-inter text-3xl uppercase dark:text-darkYellow  text-black tracking-widest font-extralight 
+  @apply  font-inter text-3xl uppercase 
+  dark:text-darkYellow  text-black tracking-widest 
+  font-light dark:font-extralight 
 }
 

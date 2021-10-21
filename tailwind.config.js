@@ -30,7 +30,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fontWeight: ["dark"],
+    },
   },
   plugins: [],
 };

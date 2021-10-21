@@ -16,11 +16,16 @@ function Education(props) {
             md:mt-4 md:ml-4 md:rounded-sm 
            px-4 py-4"
     >
-      <div
-        className="uppercase text-center  py-4
-      cardHead "
-      >
-        {text.education && text.education.title}
+      <div className=" w-full   flex justify-center">
+        <div
+          className=" text-center  py-4
+           
+         cardHead
+
+        "
+        >
+          {text.education && text.education.title}
+        </div>
       </div>
 
       <div>
