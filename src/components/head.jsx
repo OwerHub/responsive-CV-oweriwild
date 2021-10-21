@@ -3,6 +3,7 @@ import Switch from "./switch";
 
 import LanguageSelect from "./languageSelect";
 import { TextContext } from "../context/TextContext";
+import { divideWidth } from "tailwindcss/defaulttheme";
 
 function HeadDiv(props) {
   const [text, settext] = useContext(TextContext);
@@ -59,7 +60,9 @@ function HeadDiv(props) {
       </div>
       <div
         className="
-          text-center  font-we
+       
+          flex flex-col justify-end xs:justify-center pb-3 sm:pb-0
+          text-center  
           col-start-1 col-span-3 row-start-5  row-span-2
           md:col-start-3 md:row-start-1  md:row-span-4
           md:col-span-5 lg:col-span-7 xl:col-span-9
@@ -68,16 +71,18 @@ function HeadDiv(props) {
       >
         <div
           className="
-          md:mt-10
-          font-archivoBlack text-6xl text-left  uppercase
-          text-center  md:text-left"
+          
+           flex justify-center md:justify-start items-center xs:items-end
+          font-archivoBlack 
+          text-4xl xs:text-5xl sm:text-6xl md:text-5xl lg:text-6xl  
+          text-center  md:text-left   uppercase"
         >
-          {text.head && text.head[1]}
+          <div>{text.head && text.head[1]}</div>
         </div>
         <div
           className="
-          mt-3
-          text-jura font-light uppercase text-2xl  tracking-widest
+          xs:mt-3
+          text-jura font-light uppercase  md:text-xl lg:text-2xl  tracking-widest
          dark:text-white
           text-center  md:text-left"
         >
