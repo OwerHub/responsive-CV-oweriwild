@@ -3,13 +3,11 @@ import Switch from "./switch";
 
 import LanguageSelect from "./languageSelect";
 import { TextContext } from "../context/TextContext";
-import { divideWidth } from "tailwindcss/defaulttheme";
+import { divideWidth } from "tailwindcss/defaultTheme";
 
 function HeadDiv(props) {
   const [text, settext] = useContext(TextContext);
-  /*   if (text.head) {
-    console.log(text.head);
-  } */
+
   return (
     <header
       className="
@@ -26,6 +24,7 @@ function HeadDiv(props) {
 
       <div
         className="
+  
           text-left  cursor-pointer 
           flex justify-center items-center
           col-start-1 row-start-1 row-span-2 md:row-span-2 
@@ -60,8 +59,8 @@ function HeadDiv(props) {
       </div>
       <div
         className="
-       
-          flex flex-col justify-end xs:justify-center pb-3 sm:pb-0
+          
+          flex flex-col justify-end xs:justify-center pb-3 sm:pb-1 md:pb-2
           text-center  
           col-start-1 col-span-3 row-start-5  row-span-2
           md:col-start-3 md:row-start-1  md:row-span-4
@@ -72,12 +71,13 @@ function HeadDiv(props) {
         <div
           className="
           
+          h-full 
            flex justify-center md:justify-start items-center xs:items-end
           font-archivoBlack 
           text-4xl xs:text-5xl sm:text-6xl md:text-5xl lg:text-6xl  
           text-center  md:text-left   uppercase"
         >
-          <div>{text.head && text.head[1]}</div>
+          <div className="">{text.head && text.head[1]}</div>
         </div>
         <div
           className="

@@ -31,8 +31,8 @@ function Education(props) {
       <div>
         {text.education &&
           text.education.schools.map((data, iterator) => (
-            <div className=" mb-8">
-              <Schools data={data} key={iterator}></Schools>
+            <div key={iterator} className=" mb-8">
+              <Schools data={data}></Schools>
             </div>
           ))}
       </div>
