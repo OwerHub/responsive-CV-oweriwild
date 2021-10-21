@@ -17,7 +17,7 @@ const SoftwareSkills = () => {
   return (
     <div
       className="
-        
+        pb-4 md:pb-8
         bg-lightCard dark:bg-darkBlack 
         md:dark:bg-darkGray
           md:my-4 md:ml-4 md:rounded-sm "

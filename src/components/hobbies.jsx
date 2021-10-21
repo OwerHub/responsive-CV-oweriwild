@@ -3,7 +3,7 @@ const Hobbies = (props) => {
     <div
       className="
           bg-lightCard dark:bg-darkBlack  md:bg-transparent md:dark:bg-transparent 
-            pt-6 md:pt-12 "
+            pt-6 md:pt-12 pb-10"
     >
       <header
         className="
