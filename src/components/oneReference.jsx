@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import { existTechniqIcons } from "../service/iconsAndSkills";
+
+import { referencePictures } from "../service/referenceService";
+
 //import "../styles/try.css";
 import tempPic from "../img/temp/code_2_img.jpg";
 
@@ -10,6 +13,8 @@ const OneReference = (props) => {
     "close",
     "Description :",
   ]);
+
+  console.log(referencePictures(1));
 
   useEffect(() => {
     if (props.data.features.title === "Funckiók") {
@@ -30,7 +35,7 @@ const OneReference = (props) => {
     >
       <header
         className="
-            flex  text-lg mb-5 
+            flex  text-lg mb-5 md:mb-12 
             flex-col  md:justify-between md:flex-row text-center"
       >
         <div className="md:w-48 md:text-right md:min-w-max ">
@@ -40,13 +45,6 @@ const OneReference = (props) => {
         </div>
 
         <div className="  "> Version: {props.data.version}</div>
-        {/* <div className="flex justify-end w-1/2 ">
-          {existTechniqIcons(props.data.icons).map((data, iterator) => (
-            <div className="mx-1 my-1" key={iterator}>
-              <img src={data} alt={`logo${iterator}`} className="w-6 h-6" />
-            </div>
-          ))}
-        </div> */}
       </header>
 
       <div className="  outer  relative transition easy-in-out  ">
@@ -61,14 +59,15 @@ const OneReference = (props) => {
             "
           >
             <img
-              src={tempPic}
+              src={referencePictures(props.data.pictureNumber)}
               alt="temp"
               className="
-                     cover
-                     w-max
+                     cover w-max 
+                     md:border-4 dark:border-lightBg border-white
+                      transform md:rotate-3
                      md:h-48 md:w-48 "
             />
-            <div className=" mt-4 md:mt-2 font-medium  text-center md:text-right">
+            <div className=" mt-8  font-medium md:text-sm  text-center md:text-right">
               {props.data.date}
             </div>
           </div>
@@ -77,7 +76,7 @@ const OneReference = (props) => {
                 md:pl-4
           "
           >
-            <div className=" h-full  md:w-full flex flex-col justify-between sm:px-10  md:px-1">
+            <div className=" mt-6  md:mt-0 h-full  md:w-full flex flex-col justify-between sm:px-10  md:px-1">
               <div className="flex  justify-center md:justify-end  flex-wrap lg:pl-5 pt-2">
                 {existTechniqIcons(props.data.icons).map((data, iterator) => (
                   <div className="mx-5 mb-3 " key={iterator}>
@@ -93,6 +92,7 @@ const OneReference = (props) => {
                   </div>
                 ))}
               </div>
+
               <div className="px-4 text-right hidden md:block">
                 {props.data.publics.map((data, iterator) => (
                   <div key={`dps${iterator}`}>
@@ -109,7 +109,12 @@ const OneReference = (props) => {
           </div>
         </section>
 
-        <div className="px-4 text-center md:hidden    flex flex-col  items-start justify-center">
+        <div
+          className="
+              
+               px-4 sm:px-20  text-center md:hidden    
+                flex flex-col items-start justify-center"
+        >
           {props.data.publics.map((data, iterator) => (
             <div key={`dps${iterator}`} className="">
               <span>{data[0]}</span>
@@ -124,7 +129,7 @@ const OneReference = (props) => {
 
         <article
           className=" 
-         
+    
             "
         >
           <div

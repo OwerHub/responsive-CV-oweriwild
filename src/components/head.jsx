@@ -3,7 +3,8 @@ import Switch from "./switch";
 
 import LanguageSelect from "./languageSelect";
 import { TextContext } from "../context/TextContext";
-import { divideWidth } from "tailwindcss/defaultTheme";
+
+import owerPic from "../img/pics/me.jpg";
 
 function HeadDiv(props) {
   const [text, settext] = useContext(TextContext);
@@ -43,9 +44,11 @@ function HeadDiv(props) {
       >
         <div
           className="
-						w-44 h-44  rounded-full bg-white   z-10
-            col-start-2 row-start-1"
-        ></div>
+						w-36 h-36  rounded-full   z-10 overflow-hidden
+            col-start-2 row-start-1 border-2 border-lightSide"
+        >
+          <img src={owerPic} alt="me" />
+        </div>
       </div>
 
       <div

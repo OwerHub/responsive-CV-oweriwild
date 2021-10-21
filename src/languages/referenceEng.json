@@ -72,7 +72,7 @@
 			"name": "Parallax Pizza",
 			"version": "0.8",
 			"date": "2021 8 28",
-			"pictureNumber": 0,
+			"pictureNumber": 2,
 			"icons": ["css", "sass", "js", "react", "node"],
 			"description": "This was a full-stack project during the course and was made for a competition focused on design. On the responsive layout different elements slide and fade towards the user. The navbar reacts to the scrolling position and the svg illustrations change based on the cursor position. Booking a table saves your selection into a json file and updates the available tables",
 			"features": {

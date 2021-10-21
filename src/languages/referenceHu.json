@@ -72,7 +72,7 @@
 			"name": "Parallax Pizza",
 			"version": "0.8",
 			"date": "2021 4 15",
-			"pictureNumber": 0,
+			"pictureNumber": 2,
 			"icons": ["css", "sass", "js", "react", "node"],
 			"description": "Egy iskolai, főként frontend-re/látványra fókuszált versenyre alatt készült  full-stack project. A reszponzív felületen görgetésre feliratok úsznak oldalra, fadelnek szembe a felhasználóval  a fejléc reagál a görgetés pozíciójára az svg-alakzatok reagálnak az egér helyzetére. A frontenden foglalt asztalokat a backend json-ba menti és a foglalt asztalt kivonja a választható lehetőségek közül",
 			"features": {
