@@ -4,7 +4,7 @@
 
 		{
 			"name": "Reszponzív CV",
-			"version": "0.8",
+			"version": "1.0",
 			"date": "2021 10 21",
 			"pictureNumber": 0,
 			"icons": ["js", "tailwind", "react", "tailwind"],
@@ -12,12 +12,12 @@
 			"features": {
 				"title": "Funckiók",
 				"datas": [
-					"Angol magyar nyelv váltásának lehetősége",
-					"sötét/világos módok",
+					"Dark and light mode",
+					"Sötét/világos módok",
 					"Reszponzivitás 300px- felfelé",
-					"képernyő és mobinézet közötti teljes átrendezés",
+					"Képernyő és mobinézet közötti teljes átrendezés",
 					"Tailwind.CSS használata",
-					"fenntartható kód (adatok JSON-ből olvasva, nincs hard-kódolás)"
+					"Fenntartható kód (adatok JSON-ből olvasva, nincs hard-kódolás)"
 				]
 			},
 			"technologies": {
@@ -35,7 +35,7 @@
 			"name": "HoolieDayz",
 			"version": "0.8",
 			"date": "2021 8 28",
-			"pictureNumber": 0,
+			"pictureNumber": 1,
 			"icons": ["css", "sass", "js", "react", "node", "mongoDb", "docker"],
 			"description": "Egy régi szerelemprojekt, ami  a backend/API kurzus vizsgamunkájává nőtte ki magát. Jelen verziója a vizsgakövetelményeknek megfelelően íródott, így inkább a backendre fókuszál, és több felesleges, későbbiekben valószínűleg eltávolításra kerülő funkció is van benne. A program lényege, hogy google bejelentkezés után saját ünnepnapokat írhatunk bele, ezeket kategóriák alá soroljuk, online adatbázisba (mongoDB) mentjük, és kívánságra a google naptárunkba saját layer alá mentjük. A backend  minden végpontja tesztekkel van lefedve, és Swagger-ben dokumentált.   A github repo futtatásához környezeti változók szükségesek,  a docker a 3000-es porton azonnal fut",
 			"features": {
@@ -47,7 +47,7 @@
 					"Ünnepnapok mentése Google Naptárba API-n keresztül",
 					"Ünnepek csoportba rendezése. A csoportok adatbázisból jönnek így a későbbi verziókban tetszőlegesen módosíthatók",
 					"Megjelenítés lehet dátum, hátralévő idő, és betűrend alapján, a csoportok megjelenítése egyenként kapcsolható",
-					"teljes végpont tesztlefedettég, és Swagger dokumentáció",
+					"Teljes végpont tesztlefedettég, és Swagger dokumentáció",
 					"Fenntartható, bővíthető kód  és MVC pattern használata"
 				]
 			},

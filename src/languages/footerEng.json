@@ -1,11 +1,11 @@
 {
 	"hobbies": {
 		"title": "Hobbies",
-		"datas": ["Music", "Photos", "Reading"]
+		"datas": ["Music", "Photgraphy", "Books"]
 	},
 	"skills": {
-		"title": "Personal Skill",
-		"datas": ["Kreatív", "Tanulékony", "stb", "nagyonSTB"]
+		"title": "Personal Skills",
+		"datas": ["Creativity", "Docile", "Problem Solving", "Independent", "TeamWorking"]
 	},
 	"contacts": {
 		"title": "Contacts",

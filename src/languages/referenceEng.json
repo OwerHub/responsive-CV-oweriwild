@@ -3,25 +3,25 @@
 	"referenceList": [
 
 		{
-			"name": "Reszponzív CV",
-			"version": "0.8",
+			"name": "Responsive CV",
+			"version": "1.0",
 			"date": "2021 10 21",
 			"pictureNumber": 0,
 			"icons": ["js", "tailwind", "react"],
-			"description": "Egy  leprogramozott CV, amibe azért került egy-két plusz dolog.. Angol/magyar nyelv  és a sötét/világos módok  váltásnak lehetősége, mobil és képernyőnézet közötti teljes átrendezés, és az adatok / kódrészek olyan struktúrja (nincs beégetett adat), ami rendkívül egyszerűvé teszi a későbbi fejlesztést, vagy ha adott rá a környezet, a backend-ből történő kiszolgálást.",
+			"description": "An online CV with some extra features… Option to change between Hungarian and English display languages, dark and light mode while it is fully responsive. There is no hard-coded data in the code which means it is easier to migrate it to an environment where a backend server would serve every bit of data needed for the frontend. ",
 			"features": {
 				"title": "Features",
 				"datas": [
-					"Angol magyar nyelv váltásának lehetősége",
+					"Change display language between Hungarian and English",
 					"sötét/világos módok",
-					"Reszponzivitás 300px- felfelé",
-					"képernyő és mobinézet közötti teljes átrendezés",
+					"Support for mobile displays (300px width and upwards)",
+					"Fully responsive layout",
 					"Tailwind.CSS használata",
-					"fenntartható kód (adatok JSON-ből olvasva, nincs hard-kódolás)"
+					"Code is easy to maintain thanks to JSON files and no hardcoded data in the display code"
 				]
 			},
 			"technologies": {
-				"title": "Felhasznált technológiák",
+				"title": "Technologies used",
 				"technologieList": [{
 					"title": "Frontend",
 					"techs": ["Javascript", "React", "Tailwind", "SVG"]
@@ -35,25 +35,25 @@
 			"name": "HoolieDayz",
 			"version": "0.8",
 			"date": "2021 8 28",
-			"pictureNumber": 0,
+			"pictureNumber": 1,
 			"icons": ["css", "sass", "js", "react", "node", "mongoDb", "docker"],
-			"description": "Egy régi szerelemprojekt, ami  a backend/API kurzus vizsgamunkájává nőtte ki magát. Jelen verziója a vizsgakövetelményeknek megfelelően íródott, így inkább a backendre fókuszál, és több felesleges, későbbiekben valószínűleg eltávolításra kerülő funkció is van benne. A program lényege, hogy google bejelentkezés után saját ünnepnapokat írhatunk bele, ezeket kategóriák alá soroljuk, online adatbázisba (mongoDB) mentjük, és kívánságra a google naptárunkba saját layer alá mentjük. A backend  minden végpontja tesztekkel van lefedve, és Swagger-ben dokumentált.   A github repo futtatásához környezeti változók szükségesek,  a docker a 3000-es porton azonnal fut",
+			"description": "This is an older pet project which became my exam work for the backend/API course. The current version is compliant with the exam requirements and thus focuses on the backend solutions while containing many unused functions. These will be removed at a later date. The program works by logging in with google and creating custom holidays. We can then sort these into different categories and save them to mongoDB database. We can also export them to our google calendar in a custom layer. Tests were written for all of the backend endpoints and swagger documentation was made as well. To run the repo cloned from github you just need environmental variables and docker runs immediately on port 3000.",
 			"features": {
 				"title": "Features",
 				"datas": [
 					"Google Login",
-					"Reszponzivitás 300px-től",
-					"Saját ünnepnapok írása, szerkesztése, törlése. A változások azonnal online adatbázisba kerülnek.",
-					"Ünnepnapok mentése Google Naptárba API-n keresztül",
-					"Ünnepek csoportba rendezése. A csoportok adatbázisból jönnek így a későbbi verziókban tetszőlegesen módosíthatók",
-					"Megjelenítés lehet dátum, hátralévő idő, és betűrend alapján, a csoportok megjelenítése egyenként kapcsolható",
-					"teljes végpont tesztlefedettég, és Swagger dokumentáció",
-					"Fenntartható, bővíthető kód  és MVC pattern használata"
+					"Support for mobile displays (300px width and upwards)",
+					"Creating/deleting/editing custom holidays. Changes immediately sync to an online database.",
+					"Save holidays into google calendar through API",
+					"Sort holidays. Groups are saved in the database so they can be changed on-demand in a later version",
+					"Sorting can be done by date, remaining time and alphabetically as well. Visible groups can be toggled on and off individually.",
+					"Fully tested backend endpoints and Swagger documentation",
+					"Sustainable and extendable code and MVC pattern"
 				]
 			},
 
 			"technologies": {
-				"title": "Felhasznált technológiák",
+				"title": "Used Technologies",
 				"technologieList": [{
 					"title": "Frontend",
 					"techs": ["CSS", "SASS", "Javasript", "React", "Docker/Compose"]
@@ -74,17 +74,16 @@
 			"date": "2021 8 28",
 			"pictureNumber": 0,
 			"icons": ["css", "sass", "js", "react", "node"],
-			"description": "Egy iskolai, főként frontend-re/látványra fókuszált versenyre alatt készült  full-stack project. A reszponzív felületen görgetésre feliratok úsznak oldalra, fadelnek szembe a felhasználóval  a fejléc reagál a görgetés pozíciójára az svg-alakzatok reagálnak az egér helyzetére. A frontenden foglalt asztalokat a backend json-ba menti és a foglalt asztalt kivonja a választható lehetőségek közül",
+			"description": "This was a full-stack project during the course and was made for a competition focused on design. On the responsive layout different elements slide and fade towards the user. The navbar reacts to the scrolling position and the svg illustrations change based on the cursor position. Booking a table saves your selection into a json file and updates the available tables",
 			"features": {
 				"title": "Features",
 				"datas": [
-					"Reszponzivitás 300px-től",
-					"Görgetésre parallax módon reagáló elemek, feliratok",
-					"Fejléc dinamikusan leköveti a görgetés pozícióját",
-					"Működő asztalfoglalási rendszer",
-					"Foglalt asztalt mentése json-be",
-					"foglalt asztalok deaktiválása",
-					"Egérmutatóra animált SVG ikonok"
+					"Supports mobile displays from 350px width",
+					"Parallax, elements react to scrolling",
+					"Navbar text dynamically changes  based on scrolling position",
+					"Functional table booking system",
+					"Booked tables are not selectable",
+					"SVG icons react to cursor movement"
 				]
 			},
 			"technologies": {
