@@ -5,6 +5,7 @@
 		{
 			"name": "Reszponzív CV",
 			"version": "0.8",
+			"date": "2021 10 21",
 			"pictureNumber": 0,
 			"icons": ["js", "tailwind", "react", "tailwind"],
 			"description": "Egy  leprogramozott CV, amibe azért került egy-két plusz dolog.. Angol/magyar nyelv  és a sötét/világos módok  váltásnak lehetősége, mobil és képernyőnézet közötti teljes átrendezés, és az adatok / kódrészek olyan struktúrja (nincs beégetett adat), ami rendkívül egyszerűvé teszi a későbbi fejlesztést, vagy ha adott rá a környezet, a backend-ből történő kiszolgálást.",
@@ -27,12 +28,13 @@
 				}]
 			},
 			"publics": [
-				["github", "OwerHub/responsive-CV-oweriwild"]
+				["github", "OwerHub/responsive-CV-oweriwild", "https://github.com/OwerHub/responsive-CV-oweriwild"]
 			]
 		},
 		{
 			"name": "HoolieDayz",
 			"version": "0.8",
+			"date": "2021 8 28",
 			"pictureNumber": 0,
 			"icons": ["css", "sass", "js", "react", "node", "mongoDb", "docker"],
 			"description": "Egy régi szerelemprojekt, ami  a backend/API kurzus vizsgamunkájává nőtte ki magát. Jelen verziója a vizsgakövetelményeknek megfelelően íródott, így inkább a backendre fókuszál, és több felesleges, későbbiekben valószínűleg eltávolításra kerülő funkció is van benne. A program lényege, hogy google bejelentkezés után saját ünnepnapokat írhatunk bele, ezeket kategóriák alá soroljuk, online adatbázisba (mongoDB) mentjük, és kívánságra a google naptárunkba saját layer alá mentjük. A backend  minden végpontja tesztekkel van lefedve, és Swagger-ben dokumentált.   A github repo futtatásához környezeti változók szükségesek,  a docker a 3000-es porton azonnal fut",
@@ -69,6 +71,7 @@
 		{
 			"name": "Parallax Pizza",
 			"version": "0.8",
+			"date": "2021 4 15",
 			"pictureNumber": 0,
 			"icons": ["css", "sass", "js", "react", "node"],
 			"description": "Egy iskolai, főként frontend-re/látványra fókuszált versenyre alatt készült  full-stack project. A reszponzív felületen görgetésre feliratok úsznak oldalra, fadelnek szembe a felhasználóval  a fejléc reagál a görgetés pozíciójára az svg-alakzatok reagálnak az egér helyzetére. A frontenden foglalt asztalokat a backend json-ba menti és a foglalt asztalt kivonja a választható lehetőségek közül",
@@ -98,7 +101,7 @@
 
 			},
 			"publics": [
-				["github", "PizzaParallax"]
+				["github", "PizzaParallax", "https://github.com/OwerHub/PizzaParallax"]
 			]
 		}
 

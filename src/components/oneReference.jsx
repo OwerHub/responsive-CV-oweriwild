@@ -1,57 +1,174 @@
+import { useState, useEffect } from "react";
 import { existTechniqIcons } from "../service/iconsAndSkills";
+//import "../styles/try.css";
+import tempPic from "../img/temp/code_2_img.jpg";
 
-const oneReference = (props) => {
+const OneReference = (props) => {
+  const [isOpen, setOpen] = useState(false);
+  const [isLocalText, setLocalText] = useState([
+    "details",
+    "close",
+    "Description :",
+  ]);
+
+  useEffect(() => {
+    if (props.data.features.title === "Funckiók") {
+      setLocalText(["részletek", "bezár", "Leírás :"]);
+    } else {
+      setLocalText(["details", "close", "Description :"]);
+    }
+  }, [props.data.features.title]);
+
   return (
-    <div className="mb-6">
-      <header className="flex justify-between text-lg mb-5">
-        <div className="md:w-48 md:text-right">
-          <span className="mr-2 text-2xl font-semibold">{props.data.name}</span>
+    <div
+      className="
+                mb-6 mt-10  py-5 md:py-10 px-5 rounded
+              dark:bg-white bg-black dark:bg-opacity-5   transition-colors
+                dark:hover:bg-opacity-10  hover:bg-opacity-10 bg-opacity-5
+
+      "
+    >
+      <header
+        className="
+            flex  text-lg mb-5 
+            flex-col  md:justify-between md:flex-row text-center"
+      >
+        <div className="md:w-48 md:text-right md:min-w-max ">
+          <span className="mr-2  text-3xl md:text-2xl font-semibold">
+            {props.data.name}
+          </span>
         </div>
 
-        {/*  <span className=" bg-purple-500  ">{props.data.version}</span> */}
-        <div className="flex justify-end w-1/2 ">
+        <div className="  "> Version: {props.data.version}</div>
+        {/* <div className="flex justify-end w-1/2 ">
           {existTechniqIcons(props.data.icons).map((data, iterator) => (
             <div className="mx-1 my-1" key={iterator}>
               <img src={data} alt={`logo${iterator}`} className="w-6 h-6" />
             </div>
           ))}
-        </div>
+        </div> */}
       </header>
 
-      <div></div>
-      <section className=" flex">
-        <div className=" mt-1 h-48 w-48 bg-white text-red-500   ">kép</div>
-        <div
-          className="
-          px-4
-          2xl:w-4/6 xl:w-4/6 lg:w-4/6 md:w-4/6 w-1/2
-          "
+      <div className="  outer  relative transition easy-in-out  ">
+        <section
+          className="  
+                    mb-5 flex  w-full relative 
+                     flex-col-reverse items-center md:items-stretch md:flex-row md:justify-between "
         >
-          {/*  {props.data.description} */}
-        </div>
-      </section>
-      {/* <div>{props.data.description}</div> */}
+          <div
+            className=" mt-1   md:min-w-max   
+                      w-full   sm:w-3/4 md:w-48 
+            "
+          >
+            <img
+              src={tempPic}
+              alt="temp"
+              className="
+                     cover
+                     w-max
+                     md:h-48 md:w-48 "
+            />
+            <div className=" mt-4 md:mt-2 font-medium  text-center md:text-right">
+              {props.data.date}
+            </div>
+          </div>
+          <div
+            className="
+                md:pl-4
+          "
+          >
+            <div className=" h-full  md:w-full flex flex-col justify-between sm:px-10  md:px-1">
+              <div className="flex  justify-center md:justify-end  flex-wrap lg:pl-5 pt-2">
+                {existTechniqIcons(props.data.icons).map((data, iterator) => (
+                  <div className="mx-5 mb-3 " key={iterator}>
+                    <img
+                      src={data}
+                      alt={`logo${iterator}`}
+                      className={` w-4 ${
+                        props.data.icons.length > 6
+                          ? " sm:w-6   md:w-10 lg:w-16 "
+                          : "sm:w-6 md:w-16 "
+                      }     `}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="px-4 text-right hidden md:block">
+                {props.data.publics.map((data, iterator) => (
+                  <div key={`dps${iterator}`}>
+                    <span>{data[0]}</span>
+                    <span> : </span>
 
-      <article className="flex ">
-        <div className="w-1/2 mt-6 pr-2">{props.data.description}</div>
-        <div className="w-1/2 pl-2 ">
-          <div>{props.data.features.title}</div>
-          <ul className="ml-4 ">
-            {props.data.features.datas.map((data, iterator) => (
-              <li key={`ft${iterator}`} className="list-disc">
-                {" "}
-                {data}
-              </li>
-            ))}
-          </ul>
+                    <a href={data[2]} target="_blank" rel="noreferrer">
+                      {data[1]}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="px-4 text-center md:hidden    flex flex-col  items-start justify-center">
+          {props.data.publics.map((data, iterator) => (
+            <div key={`dps${iterator}`} className="">
+              <span>{data[0]}</span>
+              <span className="mr-4"> : </span>
+
+              <a href={data[2]} target="_blank" rel="noreferrer">
+                {data[1]}
+              </a>
+            </div>
+          ))}
         </div>
-      </article>
+
+        <article
+          className=" 
+         
+            "
+        >
+          <div
+            className={` ease-in-out mt-12
+                ${isOpen ? "h-full " : " h-0 overflow-hidden"} 
+                flex flex-col lg:flex-row
+            `}
+          >
+            <div className=" w-full  lg:w-1/2  pr-2">
+              <div className="mb-3">{isLocalText[2]}</div>
+              <div>{props.data.description}</div>
+            </div>
+            <div className=" w-full lg:w-1/2 lg:pl-2 mt-7  lg:mt-0 ">
+              <div className="mb-3">{props.data.features.title} :</div>
+              <ul className="ml-4 ">
+                {props.data.features.datas.map((data, iterator) => (
+                  <li key={`ft${iterator}`} className="list-disc">
+                    {" "}
+                    {data}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div
+            className=" mt-4  md:mt-12 my-3 flex justify-center text-center cursor-pointer  "
+            onClick={() => setOpen(!isOpen)}
+          >
+            <span
+              className=" 
+                       py-2  block w-1/4 cursor-pointer uppercase
+                       border-b-2  border-yellow-600 "
+            >
+              {`${isOpen ? isLocalText[1] : isLocalText[0]}`}
+            </span>
+          </div>
+        </article>
+      </div>
 
       <article className="mt-16  ">
-        <div>{props.data.technologies.title}</div>
+        <div className="mb-2 font-medium">{props.data.technologies.title} :</div>
         {props.data.technologies.technologieList.map((data, iterator) => (
-          <div className="flex" key={iterator}>
-            <div className="mr-3 ">{data.title}</div>
+          <div className="flex mb-2" key={iterator}>
+            <div className="mr-3 ">{data.title}:</div>
             <div className="flex flex-wrap">
               {data.techs.map((data2, iterator) => (
                 <span key={iterator} className="ml-2">
@@ -66,4 +183,4 @@ const oneReference = (props) => {
   );
 };
 
-export default oneReference;
+export default OneReference;

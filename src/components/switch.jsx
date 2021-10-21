@@ -3,6 +3,7 @@ function Switch(props) {
     <div
       className="
 				flex justify-center items-center flex-col 
+        
 			"
     >
       <div className="text-white md:text-black md:dark:text-white text-xs">
@@ -11,7 +12,8 @@ function Switch(props) {
       <div
         className={`
 								bg-gray-300 h-4 w-7 rounded-full mt-2 
-								flex ${props.dark ? "justify-end" : "justify-start"}`}
+								flex ${props.dark ? "justify-end" : "justify-start"}
+                `}
       >
         <div className="h-4 w-4 bg-gray-800 rounded-full"></div>
       </div>

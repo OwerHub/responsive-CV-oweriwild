@@ -1,5 +1,17 @@
 
-circle {
-  transition: all 0.7s ease-in-out;
 
+/* .wClose{
+max-height: 0;
+transition: max-height 0.15 ease-out;
+overflow: hidden;
 }
+
+.wOpen{
+  max-height: 500px;
+    transition: max-height 0.1s ease-in-out;
+}
+ */
+
+ .ease{
+  transition: height 0.5s ease-in-out
+ }
