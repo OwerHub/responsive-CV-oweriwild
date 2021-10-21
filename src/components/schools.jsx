@@ -1,10 +1,18 @@
 import codeCoolPic from "../img/icons/codecool.png";
+import { useEffect } from "react";
 
 const Schools = (props) => {
+  const schoolPicArray = [codeCoolPic];
+  const schools = ["CodeCool"];
+  const schoolNumber = schools.indexOf(props.data.institution);
   return (
     <div className=" my-5 flex ">
       <div>
-        <img src={codeCoolPic} alt="SchoolPic" className="w-5 mr-2 mt-1" />
+        <img
+          src={schoolPicArray[schoolNumber]}
+          alt="SchoolPic"
+          className="w-5 mr-2 mt-1"
+        />
       </div>
 
       <div className="w-full pr-5">

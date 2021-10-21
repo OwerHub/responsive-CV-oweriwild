@@ -21,7 +21,7 @@
 				]
 			},
 			"technologies": {
-				"title": "Technologies used",
+				"title": "Used Technologies",
 				"technologieList": [{
 					"title": "Frontend",
 					"techs": ["Javascript", "React", "Tailwind", "SVG"]
@@ -87,7 +87,7 @@
 				]
 			},
 			"technologies": {
-				"title": "Felhasznált technológiák",
+				"title": "Used Technologies",
 				"technologieList": [{
 						"title": "Frontend",
 						"techs": ["CSS", "SASS", "Javascript", "React", "Styled Components", "SVG"]
