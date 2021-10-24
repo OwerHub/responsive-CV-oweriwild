@@ -27,6 +27,15 @@ module.exports = {
         lightHead: "#f6d708",
         lightCard: "#ededed",
       },
+      animation: {
+        arrowPulse: "arrowPulse 1s  ease-in-out infinite ",
+      },
+      keyframes: {
+        arrowPulse: {
+          "0%, 100%": { transform: "scale(1,1)" },
+          "50%": { transform: "scale(1.2, 0.8)" },
+        },
+      },
     },
   },
   variants: {

@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { existTechniqIcons } from "../service/iconsAndSkills";
 
 import { referencePictures } from "../service/referenceService";
+import arrowIcon from "../img/icons/arrow-green.png";
 
 //import "../styles/try.css";
-import tempPic from "../img/temp/code_2_img.jpg";
 
 const OneReference = (props) => {
   const [isOpen, setOpen] = useState(false);
@@ -83,7 +83,7 @@ const OneReference = (props) => {
                     <img
                       src={data}
                       alt={`logo${iterator}`}
-                      className={` w-4 ${
+                      className={` w-4  ${
                         props.data.icons.length > 6
                           ? " sm:w-6   md:w-10 lg:w-16 "
                           : "sm:w-6 md:w-16 "
@@ -158,13 +158,29 @@ const OneReference = (props) => {
             className=" mt-4  md:mt-12 my-3 flex justify-center text-center cursor-pointer  "
             onClick={() => setOpen(!isOpen)}
           >
-            <span
-              className=" 
-                       py-2  block w-1/4 cursor-pointer uppercase
-                       border-b-2  border-yellow-600 "
+            <div
+              className="  
+                        flex items-center justify-center
+                        py-2   w-1/4 cursor-pointer uppercase
+                       border-b-2  border-yellow-600  "
             >
-              {`${isOpen ? isLocalText[1] : isLocalText[0]}`}
-            </span>
+              <div className="transform rotate-180">
+                <img
+                  src={arrowIcon}
+                  alt="ArrowIcon"
+                  className="h-4  animate-arrowPulse "
+                />
+              </div>
+
+              <span className="mx-2">{`${
+                isOpen ? isLocalText[1] : isLocalText[0]
+              }`}</span>
+              <img
+                src={arrowIcon}
+                alt="ArrowIcon"
+                className="h-4  animate-arrowPulse "
+              />
+            </div>
           </div>
         </article>
       </div>
