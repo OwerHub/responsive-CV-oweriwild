@@ -161,10 +161,11 @@ const OneReference = (props) => {
             <div
               className="  
                         flex items-center justify-center
-                        py-2   w-1/4 cursor-pointer uppercase
+                        w-3/4 xs:w-1/2 lg:w-1/4
+                        py-2    cursor-pointer uppercase
                        border-b-2  border-yellow-600  "
             >
-              <div className="transform rotate-180">
+              <div className="transform rotate-180 ">
                 <img
                   src={arrowIcon}
                   alt="ArrowIcon"
