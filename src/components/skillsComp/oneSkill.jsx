@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Pie from "./pie";
-import { returnIcon } from "../service/iconsAndSkills";
+import { returnIcon } from "../../service/iconsAndSkills";
 
 const OneSkill = (props) => {
   const [icon, name, color2, color1] = returnIcon(props.data[0]);

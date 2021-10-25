@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { TextContext } from "../context/TextContext";
 import softwareSkillsData from "../datas/softwareSkills.json";
-import OneSkill from "./oneSkill";
+import OneSkill from "./skillsComp/oneSkill";
 
 const SoftwareSkills = () => {
   const [text, setText] = useContext(TextContext);

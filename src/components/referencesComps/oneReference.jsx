@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { existTechniqIcons } from "../service/iconsAndSkills";
+import { existTechniqIcons } from "../../service/iconsAndSkills";
 
-import { referencePictures } from "../service/referenceService";
-import arrowIcon from "../img/icons/arrow-green.png";
+import { referencePictures } from "../../service/referenceService";
+import arrowIcon from "../../img/icons/arrow-green.png";
 
 //import "../styles/try.css";
 

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { TextContext } from "../context/TextContext";
-import OneReference from "./oneReference";
+import OneReference from "./referencesComps/oneReference";
 
 function Reference(props) {
   const [text, settext] = useContext(TextContext);

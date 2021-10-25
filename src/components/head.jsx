@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
-import Switch from "./switch";
+import Switch from "./headComps/switch";
 
-import LanguageSelect from "./languageSelect";
+import LanguageSelect from "./headComps/languageSelect";
 import { TextContext } from "../context/TextContext";
 
 import owerPic from "../img/pics/me.jpg";

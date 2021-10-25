@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { TextContext } from "../context/TextContext";
-import Schools from "./schools";
+import Schools from "./educationComp/schools";
 
 function Education(props) {
   const [text, settext] = useContext(TextContext);

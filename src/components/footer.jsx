@@ -1,9 +1,9 @@
 import { useContext, useState, useEffect } from "react";
 import { TextContext } from "../context/TextContext";
 
-import Hobbies from "./hobbies";
-import PersonalSkills from "./personalSkills";
-import Contacts from "./contacts";
+import Hobbies from "./footerComps/hobbies";
+import PersonalSkills from "./footerComps/personalSkills";
+import Contacts from "./footerComps/contacts";
 
 const Footer = () => {
   const [text, setText] = useContext(TextContext);

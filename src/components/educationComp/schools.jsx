@@ -1,4 +1,5 @@
-import codeCoolPic from "../img/icons/codecool.png";
+//import codeCoolPic from "../img/icons/codecool.png";
+import codeCoolPic from "../../img/icons/codecool.png";
 import { useEffect } from "react";
 
 const Schools = (props) => {

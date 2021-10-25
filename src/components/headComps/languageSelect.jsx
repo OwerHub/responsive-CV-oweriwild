@@ -1,19 +1,19 @@
 import { useState, useEffect, useContext } from "react";
-import { TextContext } from "../context/TextContext";
+import { TextContext } from "../../context/TextContext";
 
-import educationHu from "../languages/educationHu.json";
-import educationEng from "../languages/educationEng.json";
-import headHu from "../languages/headHu.json";
-import headEng from "../languages/headEng.json";
-import referenceHu from "../languages/referenceHu.json";
-import referenceEng from "../languages/referenceEng.json";
-import softwareSkillsHu from "../languages/softwareSkillsHu.json";
-import softwareSkillsEng from "../languages/softwareSkillsEng.json";
-import footerEng from "../languages/footerEng.json";
-import footerHu from "../languages/footerHu.json";
+import educationHu from "../../languages/educationHu.json";
+import educationEng from "../../languages/educationEng.json";
+import headHu from "../../languages/headHu.json";
+import headEng from "../../languages/headEng.json";
+import referenceHu from "../../languages/referenceHu.json";
+import referenceEng from "../../languages/referenceEng.json";
+import softwareSkillsHu from "../../languages/softwareSkillsHu.json";
+import softwareSkillsEng from "../../languages/softwareSkillsEng.json";
+import footerEng from "../../languages/footerEng.json";
+import footerHu from "../../languages/footerHu.json";
 
-import flagHu from "../img/flags/hun.jpg";
-import flagEng from "../img/flags/eng.jpg";
+import flagHu from "../../img/flags/hun.jpg";
+import flagEng from "../../img/flags/eng.jpg";
 
 const LanguageSelect = () => {
   const [isEng, setEng] = useState(false);
