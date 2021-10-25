@@ -64,8 +64,8 @@
 
 			},
 			"publics": [
-				["github", "OwerHub/HolyDay", "https://github.com/OwerHub/HolyDay"],
-				["docker", "docker-bármi", "https://www.docker.com/"]
+				["github", "OwerHub/HolyDay", "https://github.com/OwerHub/HolyDay"]
+
 			]
 		},
 		{

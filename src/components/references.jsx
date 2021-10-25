@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { TextContext } from "../context/TextContext";
 import OneReference from "./referencesComps/oneReference";
+import Splitter from "./allComp/splitter";
 
 function Reference(props) {
   const [text, settext] = useContext(TextContext);
@@ -16,6 +17,9 @@ function Reference(props) {
         className="text-center  py-8   
       cardHead "
       >
+        {/*  <div className="-mt-8 mb-8">
+          <Splitter></Splitter>
+        </div> */}
         {text.references && text.references.title}
       </header>
 

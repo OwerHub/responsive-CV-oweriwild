@@ -33,7 +33,7 @@ module.exports = {
       keyframes: {
         arrowPulse: {
           "0%, 100%": { transform: "scale(1,1)" },
-          "50%": { transform: "scale(1.2, 0.8)" },
+          "50%": { transform: "scale(1.35, 0.8)" },
         },
       },
     },

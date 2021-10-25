@@ -11,11 +11,11 @@ function App() {
 
   return (
     <TextProvider>
-      <div className={`App ${isDark && "dark"}`}>
+      <div className={`App  ${isDark && "dark"}`}>
         <HeadDiv switch={() => setDark(!isDark)} dark={isDark}></HeadDiv>
         <section
           className="
-        grid grid-cols-1
+        grid grid-cols-1 
         md:grid-cols-4  lg:grid-cols-5 xl:grid-cols-6
         md:dark:bg-darkBlack md:bg-lightBg dark:text-white text-black
         "

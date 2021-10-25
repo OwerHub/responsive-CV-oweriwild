@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { existTechniqIcons } from "../../service/iconsAndSkills";
 
 import { referencePictures } from "../../service/referenceService";
+
 import arrowIcon from "../../img/icons/arrow-green.png";
 
 //import "../styles/try.css";
@@ -173,7 +174,7 @@ const OneReference = (props) => {
                 />
               </div>
 
-              <span className="mx-2">{`${
+              <span className="mx-3">{`${
                 isOpen ? isLocalText[1] : isLocalText[0]
               }`}</span>
               <img
