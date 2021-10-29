@@ -1,7 +1,7 @@
 {
 	"hobbies": {
 		"title": "Hobbik",
-		"datas": ["Zene", "Fotózás", "Olvasás"]
+		"datas": ["Zene", "Fotózás", "Irodalom"]
 	},
 	"skills": {
 		"title": "Személyes Tulajdonságok",
@@ -11,8 +11,9 @@
 		"title": "Elérhetőségek",
 
 		"phone": "+36/30/665-84-70",
-		"mail": "attila.viszlo@gmail.com",
-		"github": "github.com/OwerHub"
+		"mail": "attila.viszloi@gmail.com",
+		"github": ["github.com/OwerHub", "https://github.com/OwerHub"],
+		"linkedIn": ["attila-viszloi-owerwild/", "https://www.linkedin.com/in/attila-viszloi-owerwild/"]
 
 	},
 	"others": ["Személyes Adatok"]
