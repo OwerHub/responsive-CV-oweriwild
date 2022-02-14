@@ -2,35 +2,7 @@
 	"title": "Referenciák",
 	"referenceList": [
 
-		{
-			"name": "Reszponzív CV",
-			"version": "1.0",
-			"date": "2021 10 21",
-			"pictureNumber": 0,
-			"icons": ["js", "tailwind", "react", "tailwind"],
-			"description": "Egy  leprogramozott CV, amibe azért került egy-két plusz dolog.. Angol/magyar nyelv  és a sötét/világos módok  váltásnak lehetősége, mobil és képernyőnézet közötti teljes átrendezés, és az adatok / kódrészek olyan struktúrja (nincs beégetett adat), ami rendkívül egyszerűvé teszi a későbbi fejlesztést, vagy ha adott rá a környezet, a backend-ből történő kiszolgálást.",
-			"features": {
-				"title": "Funckiók",
-				"datas": [
-					"Dark and light mode",
-					"Sötét/világos módok",
-					"Reszponzivitás 300px- felfelé",
-					"Képernyő és mobinézet közötti teljes átrendezés",
-					"Tailwind.CSS használata",
-					"Fenntartható kód (adatok JSON-ből olvasva, nincs hard-kódolás)"
-				]
-			},
-			"technologies": {
-				"title": "Felhasznált technológiák",
-				"technologieList": [{
-					"title": "Frontend",
-					"techs": ["Javascript", "React", "Tailwind", "SVG"]
-				}]
-			},
-			"publics": [
-				["github", "OwerHub/responsive-CV-oweriwild", "https://github.com/OwerHub/responsive-CV-oweriwild"]
-			]
-		},
+
 		{
 			"name": "HoolieDayz",
 			"version": "0.8",
@@ -64,7 +36,7 @@
 
 			},
 			"publics": [
-				["github", "OwerHub/HolyDay", "https://github.com/OwerHub/HolyDay"]
+				["github", "OwerHub/HolyDay", "https://github.com/OwerHub/HoolieDay-own-holiday-manager"]
 
 			]
 		},
@@ -101,7 +73,68 @@
 
 			},
 			"publics": [
-				["github", "PizzaParallax", "https://github.com/OwerHub/PizzaParallax"]
+				["github", "PizzaParallax", "https://github.com/OwerHub/PizzaParallax"],
+				["demo", "PizzaParallax", "https://awesome-saha-f9c0ec.netlify.app/"]
+			]
+		},
+		{
+			"name": "GTA Showroom",
+			"version": "0.8",
+			"date": "2022 1 10",
+			"pictureNumber": 3,
+			"icons": ["react", "js", "tailwind"],
+			"description": "Egyszerű járműkezelő alapverziója  a népszerű játékhoz. ",
+			"features": {
+				"title": "Funckiók",
+				"datas": [
+					"Reszponzivitás 250px-től",
+					"Véletlenszerű választás a kirenderelt járművekből"
+
+				]
+			},
+			"technologies": {
+				"title": "Felhasznált technológiák",
+				"technologieList": [{
+						"title": "Frontend",
+						"techs": ["React", "Javascript", "Tailwind"]
+					}
+
+				]
+
+			},
+			"publics": [
+				["github", "ShowRoom", "https://github.com/OwerHub/gta-showroom-react"],
+				["demo", "ShowRoom", "https://priceless-feynman-7c7fe0.netlify.app/"]
+			]
+		},
+		{
+			"name": "Reszponzív CV",
+			"version": "1.0",
+			"date": "2021 10 21",
+			"pictureNumber": 0,
+			"icons": ["js", "tailwind", "react", "tailwind"],
+			"description": "Egy  leprogramozott CV, amibe azért került egy-két plusz dolog.. Angol/magyar nyelv  és a sötét/világos módok  váltásnak lehetősége, mobil és képernyőnézet közötti teljes átrendezés, és az adatok / kódrészek olyan struktúrja (nincs beégetett adat), ami rendkívül egyszerűvé teszi a későbbi fejlesztést, vagy ha adott rá a környezet, a backend-ből történő kiszolgálást.",
+			"features": {
+				"title": "Funckiók",
+				"datas": [
+					"Dark and light mode",
+					"Sötét/világos módok",
+					"Reszponzivitás 300px- felfelé",
+					"Képernyő és mobinézet közötti teljes átrendezés",
+					"Tailwind.CSS használata",
+					"Fenntartható kód (adatok JSON-ből olvasva, nincs hard-kódolás)"
+				]
+			},
+			"technologies": {
+				"title": "Felhasznált technológiák",
+				"technologieList": [{
+					"title": "Frontend",
+					"techs": ["Javascript", "React", "Tailwind", "SVG"]
+				}]
+			},
+			"publics": [
+				["github", "OwerHub/responsive-CV-oweriwild", "https://github.com/OwerHub/responsive-CV-oweriwild"],
+				["demo", "Responsive CV", "https://suspicious-pike-99c004.netlify.app/"]
 			]
 		}
 
