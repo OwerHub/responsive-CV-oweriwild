@@ -36,7 +36,7 @@
 
 			},
 			"publics": [
-				["github", "OwerHub/HolyDay", "https://github.com/OwerHub/HoolieDay-own-holiday-manager"]
+				["github", "HoolieDayz", "https://github.com/OwerHub/HoolieDay-own-holiday-manager"]
 
 			]
 		},
@@ -132,7 +132,7 @@
 				}]
 			},
 			"publics": [
-				["github", "OwerHub/responsive-CV-oweriwild", "https://github.com/OwerHub/responsive-CV-oweriwild"],
+				["github", "Responsive CV", "https://github.com/OwerHub/responsive-CV-oweriwild"],
 				["demo", "Responsive CV", "https://suspicious-pike-99c004.netlify.app/"]
 			]
 		}
