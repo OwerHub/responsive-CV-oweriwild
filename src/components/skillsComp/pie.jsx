@@ -17,7 +17,7 @@ const Circle = ({ colour, pct }) => {
       cy={100}
       fill="transparent"
       stroke={strokePct !== circ ? colour : ""} // remove colour as 0% sets full circumference
-      strokeWidth={"11px"}
+      strokeWidth={"9px"}
       strokeDasharray={circ}
       strokeDashoffset={pct ? strokePct : 0}
       strokeLinecap="butt"

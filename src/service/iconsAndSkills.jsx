@@ -9,7 +9,9 @@ import tailwindPic from "../img/icons/tailwind.png";
 import nodeJsPic from "../img/icons/nodeJs.png";
 import mongoDbPic from "../img/icons/mongoDB.png";
 import dockerPic from "../img/icons/docker.png";
-import vuePic from "../img/icons/vueJS.png"
+import vuePic from "../img/icons/vueJS.png";
+import typeScriptPic from "../img/icons/typeScript.png"
+
 
 import photoshopPic from "../img/icons/photoshop.png";
 import illustratorPic from "../img/icons/illustrator.png";
@@ -26,7 +28,8 @@ const iconArray = [
   dockerPic,
   photoshopPic,
   illustratorPic,
-  vuePic
+  vuePic,
+  typeScriptPic
 ];
 
 const iconNameArray = [
@@ -41,7 +44,8 @@ const iconNameArray = [
   "docker",
   "photoshop",
   "illustrator",
-  "vue"
+  "vue",
+  "typeScript"
 ];
 
 const techniqDatas = [
@@ -57,7 +61,8 @@ const techniqDatas = [
   ["Docker", "#0091e2", "#022083"],
   ["Adobe  PhotoShop", "#2f9ff2", "#001c33"],
   ["Adobe  Illustrator", "#f29200", "#300000"],
-  ["VueJS", "#314559", "#49b180"] // it must be vue
+  ["VueJS", "#314559", "#49b180"],
+  ["Typescript", "#2d79c7", "#2d79c7"] // it must be vue
 ];
 
 export const existTechniqIcons = (inputArray) => {
