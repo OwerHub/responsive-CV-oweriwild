@@ -5,9 +5,11 @@ import reactPic from "../img/icons/react.png";
 import bootstrapPic from "../img/icons/bootstrap.png";
 import tailwindPic from "../img/icons/tailwind.png";
 
+
 import nodeJsPic from "../img/icons/nodeJs.png";
 import mongoDbPic from "../img/icons/mongoDB.png";
 import dockerPic from "../img/icons/docker.png";
+import viePic from "../img/icons/vueJS.png"
 
 import photoshopPic from "../img/icons/photoshop.png";
 import illustratorPic from "../img/icons/illustrator.png";

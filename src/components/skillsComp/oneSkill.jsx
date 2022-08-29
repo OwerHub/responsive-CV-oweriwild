@@ -9,18 +9,18 @@ const OneSkill = (props) => {
     <div className="transform scale-75 md:scale-100 ">
       <div
         className=" ;
-      bg-white bg-opacity-90 text-black w-28 h-28 rounded-full m-4 
+      bg-white bg-opacity-90 text-black w-24 h-24 rounded-full m-4 
 			flex justify-center items-center flex-col relative
       
       "
       >
         <div className="absolute">
-          <Pie
+       <Pie
             count={props.count}
             percentage={props.data[1]}
             color1={color1}
             color2={color2}
-          />
+          /> 
         </div>
         {/* <div className="absolute">százalék</div> */}
         <img src={icon} alt={props.data[0]} width="50px" />
