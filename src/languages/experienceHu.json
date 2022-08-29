@@ -1,0 +1,29 @@
+{
+	"title": "Tapasztalat",
+	"jobs": [{
+			"subject": "POMScloud ltd: Front-end fejlesztő",
+			"institution": "CodeCool",
+			"time": "2022.03- 2022.08 ",
+			
+            "tasks": [
+                "Front-end kód fejlesztése és impementálása VueJS, Javascript, SCSS és HTML használtával",
+                "Custom funkciók, modulok és direktívák fejlesztése VueJS, Vuex és Javascript használatával",
+                "Új feature-ok tervezése a csapat többi tagjával együtt",
+                "Verziókövetés  GitHub használatával ",
+                "Feladatok változásának követése agilis módszertan alapján"
+            ]
+		},
+		{
+			"subject": "Freelancer",
+			"institution": "CodeCool",
+			"time": "2021.10- 2022.03",
+            "tasks": [
+                "Front-end kód fejlesztése és impementálása VueJS, Javascript, SCSS és HTML használtával",
+                "Web design tervezése Adobe Illustrator és Figma használatával",
+                "Együttműködés más fejlesztőkkel",
+                "Verziókövetés  GitHub használatával "
+            ]
+			
+		}
+	]
+}

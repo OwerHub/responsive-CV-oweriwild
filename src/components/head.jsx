@@ -4,7 +4,7 @@ import Switch from "./headComps/switch";
 import LanguageSelect from "./headComps/languageSelect";
 import { TextContext } from "../context/TextContext";
 
-import owerPic from "../img/pics/me.jpg";
+import owerPic from "../img/pics/me-bg-red.jpg";
 
 function HeadDiv(props) {
   const [text, settext] = useContext(TextContext);

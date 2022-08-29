@@ -11,6 +11,9 @@ import softwareSkillsHu from "../../languages/softwareSkillsHu.json";
 import softwareSkillsEng from "../../languages/softwareSkillsEng.json";
 import footerEng from "../../languages/footerEng.json";
 import footerHu from "../../languages/footerHu.json";
+import experienceHu from "../../languages/experienceHu.json"
+import experienceEng from "../../languages/experienceEng.json"
+
 
 import flagHu from "../../img/flags/hun.jpg";
 import flagEng from "../../img/flags/eng.jpg";
@@ -22,6 +25,7 @@ const LanguageSelect = () => {
   useEffect(() => {
     if (isEng) {
       setText({
+        experience: experienceEng,
         head: headEng,
         education: educationEng,
         references: referenceEng,
@@ -30,6 +34,7 @@ const LanguageSelect = () => {
       });
     } else {
       setText({
+        experience: experienceHu,
         head: headHu,
         education: educationHu,
         references: referenceHu,

@@ -1,0 +1,29 @@
+{
+	"title": "Experience",
+	"jobs": [{
+			"subject": "POMScloud ltd: Front-end developer",
+			"institution": "CodeCool",
+			"time": "2022.03- 2022.08 ",
+			
+            "tasks": [
+                "Developed and implemented front-end code using VueJS , Javascript, SCSS, and HTML",
+                "Developed custom functions, modules and directives in VueJS and Javascript",
+                "Collaborated with the team to design new features for our web application",
+                " Used source control tools (GitHub) appropriately depending on the task at hand and participated in daily standups when applicable"
+                
+            ]
+		},
+		{
+			"subject": "Freelancer",
+			"institution": "CodeCool",
+			"time": "2021.10- 2022.03",
+            "tasks": [
+                "Developed and implemented front-end and full-stack code using ReactJS, VueJS, Javascript, NodeJS, MongoDB, SCSS, and HTML",
+                "Created web design plans using Figma and Adobe Illustrator",
+                "Collaborated with other developers",
+                "Used source control tools (GitHub) appropriately depending onthe task at hand"
+            ]
+			
+		}
+	]
+}
