@@ -6,10 +6,14 @@
 	"js": 100,
 	"typeScript": 100,
 	"docker": 100,
+	"redux": 100,
+	"vuex": 100,
+
 	"tailwind": 100,
 	"bootstrap": 100,
 	"sass": 100,
 	"css": 100,
+
 	"photoshop": 100,
 	"illustrator": 100
 }
