@@ -1,7 +1,40 @@
 {
 	"title": "Referenciák",
 	"referenceList": [
+		{
+			"name": "inhabitAD by POMScloud",
+			"version": "kész",
+			"date": "2022 8 20",
+			"pictureNumber": 4,
+			"icons": ["vue", "sass", "js", "vuex"],
+			"description": "a POMSCloud marketingoptimalizációs és hirdetéskezelő platformja, ami összeköttetést biztosít a folyamatban részvevő felek között, manageli és impementálja a kretívokat a kiválasztott felületekre, manageli a gazdasági tevékenységeket",
+			"features": {
+				"title": "Funckiók",
+				"datas": [
+					"Különböző hozzáférési jogosultságú user-ek kezelése, felvétele, interakciói",
+					"Kreatívok kezelése, feltöltése, rendszerezése",
+					"Kreatívok implementálása felületekre",
+					"Gazdasági tevékenységek managelése, összegzés készítése",
+					"Brandek, termékek nyilvántartása, kezelése",
+					"Marketingköltségek optimalizálása",
+					"stb..."
+					
+				]
+			},
 
+			"technologies": {
+				"title": "Általam használt technológiák",
+				"technologieList": [{
+					"title": "Frontend",
+					"techs": ["Vue", "Vuex", "Javasript", "SCSS"]
+				}]
+
+			},
+			"publics": [
+				["elérhetőség", "inhabitAD", "https://inhabitad.com/"]
+
+			]
+		},
 
 		{
 			"name": "HoolieDayz",

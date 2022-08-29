@@ -1,7 +1,40 @@
 {
 	"title": "References",
 	"referenceList": [
+		{
+			"name": "inhabitAD by POMScloud",
+			"version": "in store",
+			"date": "2022 8 20",
+			"pictureNumber": 4,
+			"icons": ["vue", "sass", "js", "vuex"],
+			"description": "POMSCloud's marketing optimization and ad management platform. provides a link between the parties involved in the process, manages and implements creatives on selected surfaces, mmanages financial activities",
+			"features": {
+				"title": "Functions",
+				"datas": [
+					"Management, recording and interactions of users with different access rights",
+					"Management, uploading and organization of creatives",
+					"Implementation of creatives on interfaces",
+					"Managing financial activities,creating  summary",
+					"Registration and management of brands and products",
+					"Optimization of marketing costs",
+					"etc..."
+					
+				]
+			},
 
+			"technologies": {
+				"title": "Used technologies",
+				"technologieList": [{
+					"title": "Frontend",
+					"techs": ["Vue", "Vuex", "Javasript", "SCSS"]
+				}]
+
+			},
+			"publics": [
+				["product page", "inhabitAD", "https://inhabitad.com/"]
+
+			]
+		},
 
 		{
 			"name": "HoolieDayz",
