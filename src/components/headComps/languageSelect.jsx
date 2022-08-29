@@ -19,7 +19,7 @@ import flagHu from "../../img/flags/hun.jpg";
 import flagEng from "../../img/flags/eng.jpg";
 
 const LanguageSelect = () => {
-  const [isEng, setEng] = useState(false);
+  const [isEng, setEng] = useState(true);
   const [text, setText] = useContext(TextContext);
 
   useEffect(() => {

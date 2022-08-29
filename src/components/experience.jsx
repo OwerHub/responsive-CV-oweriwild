@@ -15,7 +15,7 @@ function Experience (props) {
       className="
           bg-lightCard dark:bg-darkBlack 
           md:dark:bg-darkGray
-            md:mt-4 md:mr-4 md:rounded-sm 
+            md:mt-4 md:ml-4 md:rounded-sm 
            px-4 py-4"
     >
       <div className=" w-full   flex justify-center">

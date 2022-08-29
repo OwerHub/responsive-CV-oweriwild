@@ -69,9 +69,9 @@ const techniqDatas = [
   ["PhotoShop", "#2f9ff2", "#001c33"],
   ["Illustrator", "#f29200", "#300000"],
   ["VueJS", "#314559", "#49b180"],
-  ["Typescript", "#2d79c7", "#2d79c7"],
-  ["Redux", "#764abc", "#764abc"],
-  ["Vuex", "#764abc", "#764abc"],
+  ["Typescript", "#2d79c7", "#10365c"],
+  ["Redux", "#764abc", "#3e1d72"],
+  ["Vuex",  "#49b180", "#314559"],
 ];
 
 export const existTechniqIcons = (inputArray) => {

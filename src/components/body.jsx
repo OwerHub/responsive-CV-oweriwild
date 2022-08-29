@@ -10,8 +10,8 @@ function Body(props) {
           font-poppins"
     >
       <Experience></Experience>
-      <SoftwareSkills></SoftwareSkills>
       <References></References>
+      <SoftwareSkills></SoftwareSkills>
       <Education></Education>
     </div>
   );
